@@ -1,0 +1,37 @@
+/* src/index.css */
+
+:root {
+  /* Primary palette */
+  --bs-primary:   #198754; /* bootstrap “green” */
+  --bs-primary-rgb: 25, 135, 84;
+  /* Accent palette */
+  --accent-orange: #fd7e14;
+  --accent-yellow: #ffc107;
+  --accent-red:    #dc3545;
+
+  /* Text colors */
+  --text-on-primary: #fff;
+}
+
+/* body reset */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f8f9fa;
+  color: #212529;
+}
+
+/* code styling unchanged */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Fade-in animation for cards & lists */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
