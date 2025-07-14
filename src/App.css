@@ -17,7 +17,7 @@
   border-color: rgba(var(--bs-primary-rgb), 0.85) !important;
 }
 
-/* Accent buttons (you can still use for other CTAs) */
+/* Accent buttons */
 .btn-accent {
   background-color: var(--accent-orange);
   border-color: var(--accent-orange);
@@ -54,24 +54,27 @@ nav.navbar {
   font-weight: 600;
 }
 
-/* Search-bar tweaks */
+/* Search-bar tweaks: keep input + button on one row */
+.input-group {
+  display: flex !important;
+}
 .input-group .form-control {
+  flex: 1 1 auto;
+  min-width: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 .input-group .btn-primary {
+  flex: 0 0 auto;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  margin-left: 0;
 }
 
-/* Mobile fix for stacked search button */
-@media (max-width: 576px) {
-  .input-group {
-    flex-direction: column;
-  }
+/* small gap on very narrow screens */
+@media (max-width: 400px) {
   .input-group .btn-primary {
-    width: 100%;
-    margin-top: 0.5rem;
+    margin-left: 0.25rem;
   }
 }
 
@@ -81,4 +84,10 @@ nav.navbar {
   border-radius: 0.5rem;
   padding: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+/* Fade-in keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
