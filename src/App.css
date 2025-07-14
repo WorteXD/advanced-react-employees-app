@@ -1,5 +1,3 @@
-/* src/App.css */
-
 /* Override Bootstrap’s primary color */
 .btn-primary,
 .navbar.bg-primary,
@@ -54,7 +52,7 @@ nav.navbar {
   font-weight: 600;
 }
 
-/* Search-bar tweaks: keep input + button on one row */
+/* Search-bar */
 .input-group {
   display: flex !important;
 }

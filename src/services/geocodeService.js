@@ -1,4 +1,3 @@
-// src/services/geocodeService.js
 /**
  * Geocode a free-form address via Nominatim.
  * Returns { lat: string, lon: string } of the first result.

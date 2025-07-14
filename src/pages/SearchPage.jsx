@@ -1,4 +1,3 @@
-// src/pages/SearchPage.jsx
 import React, { useState, useContext } from 'react';
 import { ApiConfigContext }             from '../context/ApiConfigContext';
 import useEmployees                     from '../hooks/useEmployees';

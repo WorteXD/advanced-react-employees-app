@@ -4,8 +4,7 @@ import useLocalStorage           from '../hooks/useLocalStorage';
 export const FavoritesContext = createContext();
 
 export function FavoritesProvider({ children }) {
-  // now using the hook
-  const [favs, setFavs] = useLocalStorage('FAVS', []);
+   const [favs, setFavs] = useLocalStorage('FAVS', []);
 
   return (
     <FavoritesContext.Provider value={{ favs, setFavs }}>

@@ -1,5 +1,3 @@
-// src/services/apiService.js
-
 // Try primary endpoint, fall back on failure
 export async function fetchEmployees(seed = 'google') {
   const primary = `https://randomuser.me/api/?results=10&seed=${seed}`;
